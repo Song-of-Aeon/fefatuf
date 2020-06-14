@@ -97,6 +97,8 @@ if select &amp;&amp; collision_point(savedx, savedy, o_unit, false, false) != no
     select = false;
     selected = true;
     selectedunit = collision_point(savedx, savedy, o_unit, false, false);
+    selectedunit.x = savedx;
+    selectedunit.y = savedy;
     
 }
 if selected = true &amp;&amp; back {
@@ -109,7 +111,7 @@ if selected {
     for (i=0; i&lt;selectedunit.mov; i++) {
         var j;
         for (j=0; j&lt;selectedunit.mov; j++) {
-            if i+j &gt; selectedunit.mov {
+            if i+j &lt; selectedunit.mov {
                 bluepositionx[i*4] = selectedunit.x+i*20; //++
                 bluepositiony[i*4] = selectedunit.y+j*20;
                 bluepositionx[i*4+1] = selectedunit.x+i*20; //+-
@@ -121,14 +123,16 @@ if selected {
             }
         }
     }
-    if select {
+    if select &amp;&amp; collision_point(savedx, savedy, o_solid, false, false) = noone {
         var k;
         for (k=0; k&lt;array_length_1d(bluepositionx); k++) {
             var l;
             for (l=0; l&lt;array_length_1d(bluepositiony); l++) {
                 if savedx = bluepositionx[k] &amp;&amp; savedy = bluepositiony[l] {
-                    selectedunit.x = savedx;
-                    selectedunit.y = savedy;
+                    selectedunit.hspd = selectedunit.x - savedx;
+                    selectedunit.vspd = selectedunit.y - savedy;
+                    selectedunit.savedx = savedx;
+                    selectedunit.savedy = savedy;
                     select = false;
                     selected = false;
                     selectedunit = undefined;
@@ -184,7 +188,7 @@ if selected {
     for (i=0; i&lt;array_length_1d(bluepositionx); i++) {
         var j;
         for (j=0; j&lt;array_length_1d(bluepositiony); j++) {
-            if bluepositionx[i] != 0 &amp;&amp; bluepositiony[j] != 0 {
+            if bluepositionx[i] != 0 &amp;&amp; bluepositiony[j] != 0 &amp;&amp; collision_point(bluepositionx[i], bluepositiony[j], o_solid, false, false) = noone {
                 draw_sprite(s_blue, 0, bluepositionx[i], bluepositiony[j]);
             }
         }

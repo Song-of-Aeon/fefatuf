@@ -26,6 +26,7 @@
     <object>objects\o_sans</object>
     <object>objects\o_unit</object>
     <object>objects\o_enemyunit</object>
+    <object>objects\o_solid</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\first_corridor</room>

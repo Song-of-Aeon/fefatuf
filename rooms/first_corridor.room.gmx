@@ -54,6 +54,18 @@
     <instance objName="MEMENTO_VIXI" x="280" y="380" name="inst_F206C35B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_riddy" x="240" y="380" name="inst_65B9FF2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_sans" x="720" y="400" name="inst_6887B6DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_solid" x="400" y="440" name="inst_7180534C" locked="0" code="" scaleX="40.3499984741211" scaleY="1.20000004768372" colour="4294967295" rotation="0"/>
+    <instance objName="o_solid" x="400" y="340" name="inst_7F11224A" locked="0" code="" scaleX="40.3499984741211" scaleY="1.20000004768372" colour="4294967295" rotation="0"/>
+    <instance objName="o_solid" x="0" y="380" name="inst_55CEEC0D" locked="0" code="" scaleX="0.5" scaleY="4.5" colour="4294967295" rotation="0"/>
+    <instance objName="o_solid" x="800" y="400" name="inst_6AD24C25" locked="0" code="" scaleX="0.5" scaleY="4.5" colour="4294967295" rotation="0"/>
+    <instance objName="o_solid" x="180" y="360" name="inst_3701D3BF" locked="0" code="" scaleX="2.25" scaleY="-0.75" colour="4294967295" rotation="0"/>
+    <instance objName="o_solid" x="300" y="360" name="inst_28421CAC" locked="0" code="" scaleX="2.25" scaleY="-0.75" colour="4294967295" rotation="0"/>
+    <instance objName="o_solid" x="420" y="360" name="inst_50929EBD" locked="0" code="" scaleX="2.25" scaleY="-0.75" colour="4294967295" rotation="0"/>
+    <instance objName="o_solid" x="540" y="360" name="inst_B04BDE61" locked="0" code="" scaleX="2.25" scaleY="-0.75" colour="4294967295" rotation="0"/>
+    <instance objName="o_solid" x="780" y="360" name="inst_241D8A20" locked="0" code="" scaleX="2.25" scaleY="-0.75" colour="4294967295" rotation="0"/>
+    <instance objName="o_solid" x="660" y="360" name="inst_FAF6E132" locked="0" code="" scaleX="2.25" scaleY="-0.75" colour="4294967295" rotation="0"/>
+    <instance objName="o_solid" x="400" y="520" name="inst_4BA9A251" locked="0" code="" scaleX="-49.25" scaleY="7.25" colour="4294967295" rotation="0"/>
+    <instance objName="o_solid" x="400" y="260" name="inst_45BBF774" locked="0" code="" scaleX="-49.25" scaleY="7.25" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
