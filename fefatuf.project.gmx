@@ -10,6 +10,7 @@
     <sprite>sprites\s_riddymove</sprite>
     <sprite>sprites\s_cursor</sprite>
     <sprite>sprites\s_blue</sprite>
+    <sprite>sprites\s_red</sprite>
     <sprite>sprites\s_sans</sprite>
   </sprites>
   <backgrounds name="background">

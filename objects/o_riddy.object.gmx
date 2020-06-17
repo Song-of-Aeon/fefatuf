@@ -31,7 +31,8 @@ hspd = 0;
 vspd = 0;
 
 unit = true;
-mov = 6;
+mov = 5;
+rng = 1;
 mov++;
 </string>
           </argument>
