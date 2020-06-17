@@ -20,6 +20,10 @@
   <scripts name="scripts">
     <script>scripts\c_input.gml</script>
     <script>scripts\console_log.gml</script>
+    <script>scripts\x_theold.gml</script>
+    <script>scripts\c_bluesquares.gml</script>
+    <script>scripts\ds_grid_draw.gml</script>
+    <script>scripts\ds_blue_draw.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\MEMENTO_VIXI</object>

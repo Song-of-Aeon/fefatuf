@@ -37,10 +37,9 @@ hput = 0;
 vput = 0;
 console_log("ikiteru yo!");
 movementpoint = array_create(20);
-bluepositionx = array_create(1);
-bluepositiony = array_create(1);
-redpositionx = array_create(1);
-redpositiony = array_create(1);
+tilemap = ds_grid_create(room_width/20, room_height/20);
+bluesqx = array_create(room_width/20);
+bluesqy = array_create(room_width/20);
 </string>
           </argument>
         </arguments>
@@ -101,6 +100,7 @@ if select &amp;&amp; collision_point(savedx, savedy, o_unit, false, false) != no
     selectedunit = collision_point(savedx, savedy, o_unit, false, false);
     selectedunit.x = savedx;
     selectedunit.y = savedy;
+    c_bluesquares(selectedunit.mov, selectedunit.rng);
     
 }
 if selected = true &amp;&amp; back {
@@ -109,57 +109,19 @@ if selected = true &amp;&amp; back {
 }
 
 if selected {
-    var i;
-    var icount = 0;
-    for (i=0; i&lt;selectedunit.mov+selectedunit.rng; i++) {
-        var j;
-        for (j=0; j&lt;selectedunit.mov+selectedunit.rng; j++) {
-            if i+j &lt; selectedunit.mov &amp;&amp; icount &lt; 14 {
-                bluepositionx[icount*4] = selectedunit.x+i*20; //++
-                bluepositiony[icount*4] = selectedunit.y+j*20;
-                console_log(string(i) + "+" + string(j) + " at " + string(icount) + " makes " + string(bluepositionx[icount*4]) + ", " + string(bluepositiony[icount*4]));
-                icount++;
-                /*bluepositionx[i*4+1] = selectedunit.x+i*20; //+-
-                bluepositiony[i*4+1] = selectedunit.y-j*20;
-                bluepositionx[i*4+2] = selectedunit.x-i*20; //-+
-                bluepositiony[i*4+2] = selectedunit.y+j*20;
-                bluepositionx[i*4+3] = selectedunit.x-i*20; //--
-                bluepositiony[i*4+3] = selectedunit.y-j*20;
-            } else if i+j &lt; selectedunit.mov+selectedunit.rng {
-                redpositionx[i*4] = selectedunit.x+i*20; //++
-                redpositiony[i*4] = selectedunit.y+j*20;
-                redpositionx[i*4+1] = selectedunit.x+i*20; //+-
-                redpositiony[i*4+1] = selectedunit.y-j*20;
-                redpositionx[i*4+2] = selectedunit.x-i*20; //-+
-                redpositiony[i*4+2] = selectedunit.y+j*20;
-                redpositionx[i*4+3] = selectedunit.x-i*20; //--
-                redpositiony[i*4+3] = selectedunit.y-j*20;*/
-            } //just ds grid it bruv
-            
+    
+    if select {
+        if ds_grid_get(tilemap, savedx/20, savedy/20) != 0 {
+            selectedunit.hspd = selectedunit.x - savedx;
+            selectedunit.vspd = selectedunit.y - savedy;
+            selectedunit.savedx = savedx;
+            selectedunit.savedy = savedy;
+            select = false;
+            selected = false;
+            selectedunit = undefined;
+            tilemap = ds_grid_create(room_width/20, room_height/20);
         }
     }
-    selected=false;
-    /*if select &amp;&amp; collision_point(savedx, savedy, o_solid, false, false) = noone {
-        var k;
-        for (k=0; k&lt;array_length_1d(bluepositionx); k++) {
-            var l;
-            for (l=0; l&lt;array_length_1d(bluepositiony); l++) {
-                if savedx = bluepositionx[k] &amp;&amp; savedy = bluepositiony[l] {
-                    selectedunit.hspd = selectedunit.x - savedx;
-                    selectedunit.vspd = selectedunit.y - savedy;
-                    selectedunit.savedx = savedx;
-                    selectedunit.savedy = savedy;
-                    select = false;
-                    selected = false;
-                    selectedunit = undefined;
-                }
-            }
-        }
-        x = savedx;
-        y = savedy;
-        //if distance_to_point(selectedunit.x, selectedunit.y)/20 &lt; selectedunit.mov
-        
-    }*/
     if keyboard_check_pressed(vk_space) {
         /*console_log(bluepositionx);
         console_log(bluepositiony);*/
@@ -184,48 +146,37 @@ if selected {
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>MEMENTO_VIXI</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>1</kind>
             <string>
-if !selected {
+if selected {
     /*var i;
-    for (i=0; i&lt;selectedunit.mov; i++) {
+    for (i=0; i&lt;array_length_1d(bluesqx); i++) {
         var j;
-        for (j=0; j&lt;selectedunit.mov; j++) {
-            if i+j &lt; selectedunit.mov {
-                draw_sprite(s_blue, 0, selectedunit.x+i*20, selectedunit.y+j*20);
-                draw_sprite(s_blue, 0, selectedunit.x+i*20, selectedunit.y-j*20);
-                draw_sprite(s_blue, 0, selectedunit.x-i*20, selectedunit.y+j*20);
-                draw_sprite(s_blue, 0, selectedunit.x-i*20, selectedunit.y-j*20);
+        for (j=0; j&lt;array_length_1d(bluesqy); j++) {
+            if bluesqx[i] &gt; 0 || bluesqx[j] &gt; 0 {
+                draw_sprite(s_blue, 0, i*20, j*20);
             }
         }
     }*/
     var i;
-    for (i=0; i&lt;array_length_1d(bluepositionx); i++) {
+    for (i=0; i&lt;ds_grid_width(tilemap); i++) {
         var j;
-        for (j=0; j&lt;array_length_1d(bluepositiony); j++) {
-            if bluepositionx[i] != 0 &amp;&amp; bluepositiony[j] != 0 {
-                draw_sprite(s_blue, 0, bluepositionx[i], bluepositiony[j]);
+        for (j=0; j&lt;ds_grid_height(tilemap); j++) {
+            if ds_grid_get(tilemap, i, j) &gt; 0 {
+                draw_sprite(s_blue, 0, i*20, j*20);
             }
         }
     }
-    /*var k;
-    for (k=0; k&lt;array_length_1d(redpositionx); k++) {
-        var l;
-        for (l=0; l&lt;array_length_1d(redpositiony); l++) {
-            if redpositionx[k] != 0 &amp;&amp; redpositiony[l] != 0 {
-                draw_sprite(s_red, 0, redpositionx[k], redpositiony[l]);
-            }
-        }
-    }*/
     draw_line(selectedunit.x, selectedunit.y, x, y);
 }
 
-
+draw_set_colour(c_white)
+ds_grid_draw(tilemap, savedx, savedy);
 
 draw_self();
 </string>
