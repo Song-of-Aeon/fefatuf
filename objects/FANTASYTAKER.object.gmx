@@ -38,7 +38,7 @@ loaded = false;
 hp = 16;
 console_log("ikiteru ze!");
 state = c_standard;
-dialogueat = 0;
+dialogueat = 1;
 </string>
           </argument>
         </arguments>
@@ -102,6 +102,9 @@ if loaded = true {
 }
 draw_sprite(s_ui, 0, 0, 0);
 draw_text(390, 730, string(hp));
+if instance_exists(o_ring) {
+    //draw_sprite_ext(s_ring2, 0, o_ring.x, o_ring.y, o_ring.image_xscale, o_ring.image_yscale, o_ring.image_angle, c_white, o_ring.image_alpha);
+}
 </string>
           </argument>
         </arguments>

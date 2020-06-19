@@ -92,7 +92,7 @@ if moving = true {
             hp--;
         }
     }
-    if select && !instance_exists(o_spark) {
+    if select && !instance_exists(o_spark) && dialogueat > 0 {
         loaded = !loaded;
     }
 }

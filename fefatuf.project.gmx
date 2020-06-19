@@ -22,6 +22,9 @@
     <sprite>sprites\s_walkable</sprite>
     <sprite>sprites\s_side</sprite>
     <sprite>sprites\s_roukanken</sprite>
+    <sprite>sprites\s_mini_hakkero</sprite>
+    <sprite>sprites\s_ring</sprite>
+    <sprite>sprites\s_ring2</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\s_fuck_the_police</background>
@@ -63,6 +66,8 @@
     <object>objects\o_turret</object>
     <object>objects\object2</object>
     <object>objects\o_roukanken</object>
+    <object>objects\o_mini_hakkero</object>
+    <object>objects\o_ring</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room3</room>
