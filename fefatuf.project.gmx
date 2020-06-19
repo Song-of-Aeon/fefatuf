@@ -16,7 +16,7 @@
     <sprite>sprites\s_rock</sprite>
     <sprite>sprites\s_marisa</sprite>
     <sprite>sprites\s_spark</sprite>
-    <sprite>sprites\s_kogasa</sprite>
+    <sprite>sprites\s_girl</sprite>
     <sprite>sprites\s_chooser</sprite>
     <sprite>sprites\s_ui</sprite>
     <sprite>sprites\s_walkable</sprite>
@@ -25,6 +25,7 @@
     <sprite>sprites\s_mini_hakkero</sprite>
     <sprite>sprites\s_ring</sprite>
     <sprite>sprites\s_ring2</sprite>
+    <sprite>sprites\s_kogasa</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\s_fuck_the_police</background>
@@ -43,6 +44,7 @@
     <script>scripts\txt_.gml</script>
     <script>scripts\c_standard.gml</script>
     <script>scripts\c_null.gml</script>
+    <script>scripts\c_wiggle.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\ft_calligraphic</font>
@@ -62,11 +64,11 @@
     <object>objects\o_spark</object>
     <object>objects\o_object</object>
     <object>objects\o_kogasa</object>
+    <object>objects\o_roukanken</object>
+    <object>objects\o_mini_hakkero</object>
     <object>objects\o_goal</object>
     <object>objects\o_turret</object>
     <object>objects\object2</object>
-    <object>objects\o_roukanken</object>
-    <object>objects\o_mini_hakkero</object>
     <object>objects\o_ring</object>
   </objects>
   <rooms name="rooms">

@@ -88,7 +88,7 @@
     <instance objName="o_turret" x="960" y="448" name="inst_5C22F4C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall" x="1088" y="320" name="inst_A0851E9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_turret" x="896" y="448" name="inst_E6A8EE61" locked="0" code="alarm[0] = 90;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_mini_hakkero" x="1088" y="384" name="inst_E79AD327" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_mini_hakkero" x="1088" y="384" name="inst_FAD14166" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="prt_thetiles" x="992" y="352" w="64" h="64" xo="0" yo="0" id="10000004" name="inst_633FDBB7" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
