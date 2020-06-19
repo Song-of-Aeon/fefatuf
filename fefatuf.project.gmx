@@ -12,6 +12,12 @@
     <sprite>sprites\s_blue</sprite>
     <sprite>sprites\s_red</sprite>
     <sprite>sprites\s_sans</sprite>
+    <sprite>sprites\s_wall</sprite>
+    <sprite>sprites\s_rock</sprite>
+    <sprite>sprites\s_marisa</sprite>
+    <sprite>sprites\s_spark</sprite>
+    <sprite>sprites\s_kogasa</sprite>
+    <sprite>sprites\s_chooser</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\s_fuck_the_police</background>
@@ -26,14 +32,22 @@
     <script>scripts\ds_blue_draw.gml</script>
   </scripts>
   <objects name="objects">
+    <object>objects\FANTASYTAKER</object>
     <object>objects\MEMENTO_VIXI</object>
     <object>objects\o_riddy</object>
     <object>objects\o_sans</object>
     <object>objects\o_unit</object>
     <object>objects\o_enemyunit</object>
     <object>objects\o_solid</object>
+    <object>objects\o_wall</object>
+    <object>objects\o_rock</object>
+    <object>objects\o_textbox</object>
+    <object>objects\o_spark</object>
+    <object>objects\o_object</object>
+    <object>objects\o_kogasa</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\koumakan</room>
     <room>rooms\first_corridor</room>
     <room>rooms\last_corridor</room>
   </rooms>
