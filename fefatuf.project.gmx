@@ -18,9 +18,14 @@
     <sprite>sprites\s_spark</sprite>
     <sprite>sprites\s_kogasa</sprite>
     <sprite>sprites\s_chooser</sprite>
+    <sprite>sprites\s_ui</sprite>
+    <sprite>sprites\s_walkable</sprite>
+    <sprite>sprites\s_side</sprite>
+    <sprite>sprites\s_roukanken</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\s_fuck_the_police</background>
+    <background>background\prt_thetiles</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -57,8 +62,10 @@
     <object>objects\o_goal</object>
     <object>objects\o_turret</object>
     <object>objects\object2</object>
+    <object>objects\o_roukanken</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room3</room>
     <room>rooms\koumakan</room>
     <room>rooms\first_corridor</room>
     <room>rooms\last_corridor</room>
