@@ -25,7 +25,39 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>choosing = 0;
+chooser = 0;
+starting = 0;
+savedpoint = 0;
+choiceno = 0;
+msgsprite = array_create(99);
+msgspriteno = array_create(99);
+choiceat[0] = "";
+txturn = 0;
+txtalpha = .1;
+fading = false;
+switch FANTASYTAKER.dialogueat {
+    case 0:
+        txt_test();
+        break;
+    case 1:
+        
+        break;
+    case 2:
+        
+        break;
+    case 3:
+        
+        break;
+    case 4:
+        
+        break;
+    case 5:
+        
+        break;
+    
+}
+</string>
           </argument>
         </arguments>
       </action>
@@ -47,22 +79,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (characters &lt; message_length) &amp;&amp; choosing = 0 { 
-    hold = keyboard_check(ord("Z"));
-    skip = keyboard_check_pressed(ord("S"));
-    
-    characters += increase * (2 + hold);
-    if choiceno &lt; array_length_1d(choiceat) &amp;&amp; message_current = choiceat[choiceno] {
-        choicesetdraw[0] = choice[choiceno*2];
-        choicesetdraw[1] = choice[choiceno*2+1];
-        starting = 1;
-    }
-    
-    if skip {
-        characters = message_length;
-    }
-    message_draw = string_copy(message[message_current], 0, characters);
-} else if choosing != 2 { 
+            <string>
+message_draw = message[message_current];
+if choiceno &lt; array_length_1d(choiceat) &amp;&amp; message_current = choiceat[choiceno] {
+    choicesetdraw[0] = choice[choiceno*2];
+    choicesetdraw[1] = choice[choiceno*2+1];
+    starting = 1;
+}
+if choosing != 2 { 
     if (keyboard_check_pressed(ord("S"))) { 
         if starting = 1 {
             starting = 0;
@@ -74,18 +98,12 @@
             message_length = string_length(message[message_current]);
             characters = 0;
             message_draw = "";
-            INITIALIZE.state = c_null;
         } else { 
             instance_destroy();
             
             
         }
-        if savedpoint != 0 {
-            
-        }
     }
-} else if choosing = 2 {
-    
 }
 if keyboard_check_pressed(vk_up) || keyboard_check_pressed(vk_down) {
     if chooser = 0 {
@@ -102,7 +120,7 @@ if choosing = 1 {
         message_length = string_length(message[message_current]);
         characters = 0;
         message_draw = "";
-        INITIALIZE.state = c_null;
+        txtalpha = .1;
         choiceno++;
     }
 }
@@ -114,6 +132,16 @@ if keyboard_check_pressed(vk_control) {
     }
 }
 
+if txtalpha &lt; 1 &amp;&amp; !fading {
+    txtalpha += .05;
+}
+if fading {
+    durability = 0;
+    txtalpha -= .02;
+    if txtalpha &lt;= 0 {
+        instance_destroy();
+    }
+}
 
 </string>
           </argument>
@@ -140,7 +168,6 @@ if keyboard_check_pressed(vk_control) {
             <string>if msgsprite[message_current] != 0 {
     draw_sprite(msgsprite[message_current], msgspriteno[message_current], x, y);
 }
-draw_self();
 draw_set_halign(fa_center);
 draw_set_colour(c_white);
 if choosing = 0 {

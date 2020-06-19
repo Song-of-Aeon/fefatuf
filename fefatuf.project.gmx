@@ -30,7 +30,15 @@
     <script>scripts\c_bluesquares.gml</script>
     <script>scripts\ds_grid_draw.gml</script>
     <script>scripts\ds_blue_draw.gml</script>
+    <script>scripts\c_txtcommon.gml</script>
+    <script>scripts\txt_test.gml</script>
+    <script>scripts\txt_.gml</script>
+    <script>scripts\c_standard.gml</script>
+    <script>scripts\c_null.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\ft_calligraphic</font>
+  </fonts>
   <objects name="objects">
     <object>objects\FANTASYTAKER</object>
     <object>objects\MEMENTO_VIXI</object>
@@ -41,10 +49,14 @@
     <object>objects\o_solid</object>
     <object>objects\o_wall</object>
     <object>objects\o_rock</object>
+    <object>objects\o_fairy</object>
     <object>objects\o_textbox</object>
     <object>objects\o_spark</object>
     <object>objects\o_object</object>
     <object>objects\o_kogasa</object>
+    <object>objects\o_goal</object>
+    <object>objects\o_turret</object>
+    <object>objects\object2</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\koumakan</room>
