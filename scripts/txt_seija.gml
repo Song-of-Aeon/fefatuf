@@ -1,17 +1,16 @@
-///txt_test
+///txt_mini_hakkero
 //depending on if the message[] = is prefacing it, you have | <   this  > | much space
 //and five lines to work with
-message[0] = "No girls yet...";
-message[1] = "Hey,
-ain't that my Mini-Hakkero?";
-message[2] = "Nice. Let's keep moving.";
+message[0] = "hey asswipe. didja like my puzzle lol";
+message[1] = "LOLOL what a fuckin simp";
+message[2] = "kyahaha, i don't think i will";
 
-/*choice[0] = "funny";
-choice[1] = "unfunny";
-choiceat[0] = 1;
-choiceoutcome[0] = 2;
-choiceoutcome[1] = 3;
-message_end2[0] = 2;*/
+choice[0] = "Yeah, it was challenging!";
+choice[1] = "Fuck off.";
+choiceat[0] = 0;
+choiceoutcome[0] = 1;
+choiceoutcome[1] = 2;
+message_end2[0] = "die";
 
 
 c_txtcommon();

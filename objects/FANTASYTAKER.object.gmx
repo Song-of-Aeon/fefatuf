@@ -37,7 +37,7 @@ loaded = false;
 hp = 19;
 console_log("ikiteru ze!");
 state = c_standard;
-dialogueat = 1;
+dialogueat = 0;
 thebigblack = 0;
 </string>
           </argument>

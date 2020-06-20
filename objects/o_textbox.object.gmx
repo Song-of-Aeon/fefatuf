@@ -41,22 +41,22 @@ savedy = y;
 naty = y;
 switch FANTASYTAKER.dialogueat {
     case 0:
-        txt_test();
+        txt_mini_hakkero();
         break;
     case 1:
-        txt_test();
+        txt_kogasa();
         break;
     case 2:
-        txt_test();
+        txt_roukanken();
         break;
     case 3:
-        txt_test();
+        txt_seija();
         break;
     case 4:
-        txt_test();
+        txt_mini_hakkero();
         break;
     case 5:
-        txt_test();
+        txt_mini_hakkero();
         break;
     
 }
