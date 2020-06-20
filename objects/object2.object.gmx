@@ -51,7 +51,7 @@ vspd = 0;
             <kind>1</kind>
             <string>x += hspd;
 y += vspd;
-if collision_point(x, y, o_wall, false, false) {
+if collision_point(x, y, o_object, false, false) {
     instance_destroy();
 }
 </string>

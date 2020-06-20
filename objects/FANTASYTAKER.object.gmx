@@ -34,7 +34,7 @@ hput = 0;
 vput = 0;
 moving = true;
 loaded = false;
-hp = 20;
+hp = 19;
 console_log("ikiteru ze!");
 state = c_standard;
 dialogueat = 1;

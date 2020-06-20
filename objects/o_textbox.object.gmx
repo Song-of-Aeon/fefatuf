@@ -44,19 +44,19 @@ switch FANTASYTAKER.dialogueat {
         txt_test();
         break;
     case 1:
-        
+        txt_test();
         break;
     case 2:
-        
+        txt_test();
         break;
     case 3:
-        
+        txt_test();
         break;
     case 4:
-        
+        txt_test();
         break;
     case 5:
-        
+        txt_test();
         break;
     
 }
@@ -84,6 +84,7 @@ switch FANTASYTAKER.dialogueat {
             <kind>1</kind>
             <string>room_goto_next();
 instance_create(0, 0, o_fai);
+FANTASYTAKER.state = c_standard;
 </string>
           </argument>
         </arguments>

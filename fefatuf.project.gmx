@@ -76,9 +76,10 @@
     <object>objects\o_fai</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\mini_hakkero</room>
     <room>rooms\kogasa</room>
     <room>rooms\roukanken</room>
-    <room>rooms\mini_hakkero</room>
+    <room>rooms\seija</room>
     <room>rooms\first_corridor</room>
     <room>rooms\last_corridor</room>
   </rooms>

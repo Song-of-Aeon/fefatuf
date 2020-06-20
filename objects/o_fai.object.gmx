@@ -29,12 +29,17 @@
     case 0:
         FANTASYTAKER.savedx = 768;
         FANTASYTAKER.savedy = 832;
-        FANTASYTAKER.hp = 20;
+        FANTASYTAKER.hp = 19;
         break;
     case 1:
         FANTASYTAKER.savedx = 768;
         FANTASYTAKER.savedy = 640;
-        FANTASYTAKER.hp = 22;
+        FANTASYTAKER.hp = 26;
+        break;
+    case 2:
+        FANTASYTAKER.savedx = 896;
+        FANTASYTAKER.savedy = 704;
+        FANTASYTAKER.hp = 99;
         break;
 }
 image_alpha = 1.5;

@@ -41,14 +41,14 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
     <instance objName="o_wall" x="832" y="896" name="inst_D18C0865" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -81,8 +81,7 @@
     <instance objName="o_wall" x="1024" y="448" name="inst_48AC7C70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall" x="960" y="384" name="inst_4FAC8A7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_kogasa" x="832" y="384" name="inst_DC7D69BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_rock" x="960" y="640" name="inst_0C627034" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="FANTASYTAKER" x="768" y="832" name="inst_D85BEE04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_wall" x="960" y="640" name="inst_8F160E4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="prt_thetiles" x="800" y="352" w="64" h="64" xo="0" yo="0" id="10000095" name="inst_7DA2DB4C" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -96,7 +95,6 @@
     <tile bgName="prt_thetiles" x="736" y="544" w="64" h="64" xo="0" yo="0" id="10000103" name="inst_C09F6B77" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="prt_thetiles" x="864" y="544" w="64" h="64" xo="0" yo="0" id="10000104" name="inst_5368EBD1" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="prt_thetiles" x="928" y="544" w="64" h="64" xo="0" yo="0" id="10000105" name="inst_CDCBB5C4" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prt_thetiles" x="928" y="608" w="64" h="64" xo="0" yo="0" id="10000106" name="inst_5F01CB4B" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="prt_thetiles" x="864" y="608" w="64" h="64" xo="0" yo="0" id="10000107" name="inst_5BEA0874" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="prt_thetiles" x="864" y="672" w="64" h="64" xo="0" yo="0" id="10000108" name="inst_0436ED0B" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="prt_thetiles" x="928" y="672" w="64" h="64" xo="0" yo="0" id="10000109" name="inst_382A0ADC" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -126,7 +124,6 @@
     <tile bgName="prt_thetiles" x="864" y="352" w="64" h="64" xo="64" yo="64" id="10000135" name="inst_AA928E14" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="prt_thetiles" x="928" y="480" w="64" h="64" xo="64" yo="64" id="10000136" name="inst_322F21C2" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="prt_thetiles" x="992" y="544" w="64" h="64" xo="64" yo="64" id="10000137" name="inst_FDBFD0D1" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prt_thetiles" x="992" y="608" w="64" h="64" xo="64" yo="64" id="10000138" name="inst_C2212218" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="prt_thetiles" x="992" y="672" w="64" h="64" xo="64" yo="64" id="10000139" name="inst_2FAAB769" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="prt_thetiles" x="992" y="736" w="64" h="64" xo="64" yo="64" id="10000140" name="inst_14222773" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="prt_thetiles" x="864" y="800" w="64" h="64" xo="64" yo="64" id="10000141" name="inst_9E9FCCDB" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -152,6 +149,11 @@
     <tile bgName="prt_thetiles" x="608" y="736" w="64" h="64" xo="192" yo="0" id="10000162" name="inst_9ED4D144" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="prt_thetiles" x="672" y="864" w="64" h="64" xo="192" yo="0" id="10000163" name="inst_6B8DA0AC" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="prt_thetiles" x="992" y="352" w="64" h="64" xo="0" yo="192" id="10000164" name="inst_27C37FE6" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="prt_thetiles" x="928" y="608" w="64" h="64" xo="64" yo="64" id="10000255" name="inst_E797DC6B" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="prt_thetiles" x="928" y="608" w="64" h="64" xo="0" yo="64" id="10000256" name="inst_2BD1708B" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="prt_thetiles" x="928" y="608" w="64" h="64" xo="0" yo="128" id="10000257" name="inst_7F129B32" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="prt_thetiles" x="992" y="608" w="64" h="64" xo="0" yo="192" id="10000258" name="inst_F41003E6" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="prt_thetiles" x="992" y="608" w="64" h="64" xo="128" yo="0" id="10000259" name="inst_959BBCDF" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
