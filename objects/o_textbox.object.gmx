@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-5</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -36,6 +36,9 @@ choiceat[0] = "";
 txturn = 0;
 txtalpha = .1;
 fading = false;
+vavr = 0;
+savedy = y;
+naty = y;
 switch FANTASYTAKER.dialogueat {
     case 0:
         txt_test();
@@ -62,6 +65,30 @@ switch FANTASYTAKER.dialogueat {
         </arguments>
       </action>
     </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>room_goto_next();
+instance_create(0, 0, o_fai);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -79,41 +106,44 @@ switch FANTASYTAKER.dialogueat {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>c_input();
 message_draw = message[message_current];
 if choiceno &lt; array_length_1d(choiceat) &amp;&amp; message_current = choiceat[choiceno] {
     choicesetdraw[0] = choice[choiceno*2];
     choicesetdraw[1] = choice[choiceno*2+1];
     starting = 1;
 }
-if choosing != 2 { 
-    if (keyboard_check_pressed(ord("S"))) { 
-        if starting = 1 {
-            starting = 0;
-            choosing = 1;
-            exit;
-        }
-        if (message_current &lt; message_end) &amp;&amp; (message_current != message_end2[choiceno]) {
-            message_current += 1;
-            message_length = string_length(message[message_current]);
-            characters = 0;
-            message_draw = "";
-        } else { 
-            instance_destroy();
-            
-            
-        }
+if (select) { 
+    if starting = 1 {
+        starting = 0;
+        choosing = 1;
+        select = false;
+    }
+    if (message_current &lt; message_end) &amp;&amp; (message_current != message_end2[choiceno]) {
+        message_current += 1;
+        message_length = string_length(message[message_current]);
+        characters = 0;
+        message_draw = "";
+    } else { 
+        instance_destroy();
+        
+        
     }
 }
 if keyboard_check_pressed(vk_up) || keyboard_check_pressed(vk_down) {
     if chooser = 0 {
         chooser = 1;
+        vavr = -50;
+        savedy += 50;
     } else if chooser = 1 {
         chooser = 0;
+        vavr = 50;
+        savedy -= 50;
     }
+    console_log(savedy);
 }
 if choosing = 1 {
-    if keyboard_check_pressed(ord('S')) {
+    if select {
         choosing = 0;
         savedpoint = 0;
         message_current = choiceoutcome[choiceno*2+chooser];
@@ -122,13 +152,6 @@ if choosing = 1 {
         message_draw = "";
         txtalpha = .1;
         choiceno++;
-    }
-}
-if keyboard_check_pressed(vk_control) {
-    if choiceat[0] = "" || choiceno &gt; array_length_1d(choiceat) {
-        instance_destroy();
-    } else {
-        message_current = choiceat[choiceno];
     }
 }
 
@@ -142,6 +165,10 @@ if fading {
         instance_destroy();
     }
 }
+
+vavr = vavr/2;
+naty = savedy;
+naty += vavr;
 
 </string>
           </argument>
@@ -165,7 +192,8 @@ if fading {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if msgsprite[message_current] != 0 {
+            <string>draw_set_font(ft_gabriola);
+if msgsprite[message_current] != 0 {
     draw_sprite(msgsprite[message_current], msgspriteno[message_current], x, y);
 }
 draw_set_halign(fa_center);
@@ -175,7 +203,7 @@ if choosing = 0 {
 } else {
     draw_text(x, y, choicesetdraw[0]);
     draw_text(x, y+50, choicesetdraw[1]);
-    draw_sprite(s_chooser, 0, x, y+(50*(chooser)));
+    draw_sprite(s_selector, 0, x, naty-50);
 }
 
 </string>
