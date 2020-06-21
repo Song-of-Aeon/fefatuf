@@ -47,6 +47,8 @@ savedy2 = 4;
 vavr = 0;
 kogasaalt = irandom(4);
 audio_play_sound(m_btlintro, 0, false);
+brag = false;
+bragalpha = 12;
 </string>
           </argument>
         </arguments>
@@ -91,19 +93,28 @@ if hp &gt;= 0 {
     }
     savedy2 = y;
 }
-if instance_exists(o_textbox) {
-    thebigblack += .1;
-    depth = -4;
-} else {
-    thebigblack -=.1;
-    depth = 0;
-}
 thebigblack = clamp(thebigblack, 0, 1);
 if state = c_standard &amp;&amp; instance_exists(o_boss) {
     state = c_vsboss;
 }
 if !audio_is_playing(m_btlintro) &amp;&amp; !audio_is_playing(m_btloop) {
     audio_play_sound(m_btloop, 0, true);
+}
+if brag = true {
+    bragalpha -= .1;
+    depth = -3;
+    if bragalpha &lt;= 0 {
+        brag = false;
+    }
+} else {
+    depth = 0;
+}
+if instance_exists(o_textbox) {
+    thebigblack += .1;
+    depth = -4;
+} else {
+    thebigblack -=.1;
+    depth = 0;
 }
 </string>
           </argument>
@@ -145,6 +156,10 @@ if hp &gt;= 1 {
     draw_text(390, 730, string(hp));
 } else {
     draw_text(390, 730, "X");
+}
+if brag {
+    draw_set_font(ft_gabriola);
+    draw_text_colour(x, y+100, "A lock does nothing against me!", c_white, c_white, c_white, c_white, bragalpha);
 }
 if instance_exists(o_ring) {
     //draw_sprite_ext(s_ring2, 0, o_ring.x, o_ring.y, o_ring.image_xscale, o_ring.image_yscale, o_ring.image_angle, c_white, o_ring.image_alpha);

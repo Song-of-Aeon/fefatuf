@@ -52,6 +52,7 @@
     <sprite>sprites\s_kogasa2</sprite>
     <sprite>sprites\s_rejected</sprite>
     <sprite>sprites\s_null</sprite>
+    <sprite>sprites\s_lock</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\s_fuck_the_police</background>
@@ -118,6 +119,7 @@
     <object>objects\o_boss</object>
     <object>objects\o_danmakugen</object>
     <object>objects\o_rejected</object>
+    <object>objects\o_lock</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\title</room>

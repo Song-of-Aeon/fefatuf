@@ -43,6 +43,8 @@ msgsprite[16] = s_null;
 message[16] = "She would not stop until having collected every youkai in Gensokyo."
 msgsprite[17] = s_null;
 message[17] = "It is said, after that, she continued even further in her quest...";
+msgsprite[18] = s_null;
+message[18] = "Her quest to become the Fantasytaker.";
 
 
 choice[0] = "funny";
