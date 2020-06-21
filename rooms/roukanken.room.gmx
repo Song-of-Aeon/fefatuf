@@ -78,8 +78,6 @@
     <instance objName="o_wall" x="768" y="384" name="inst_1B420FDF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall" x="832" y="384" name="inst_E70F8278" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall" x="896" y="384" name="inst_E1C3B083" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_turret" x="1024" y="320" name="inst_ACF978B7" locked="0" code="bitcher = 5;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_turret" x="1088" y="320" name="inst_F4CBCA65" locked="0" code="bitcher = 5;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall" x="1088" y="704" name="inst_1163CC79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall" x="1024" y="704" name="inst_5CC20784" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall" x="960" y="704" name="inst_C7C7676B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -88,6 +86,8 @@
     <instance objName="o_roukanken" x="1280" y="576" name="inst_328810F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall" x="1216" y="576" name="inst_2F4FAACD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_rock" x="1152" y="512" name="inst_1FBD69E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_fairy" x="1024" y="320" name="inst_4547F7EC" locked="0" code="bitcher = 5;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_fairy" x="1088" y="320" name="inst_1EA7C8A5" locked="0" code="bitcher = 5;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="prt_thetiles" x="736" y="416" w="64" h="64" xo="0" yo="0" id="10000166" name="inst_F0CA966E" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

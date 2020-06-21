@@ -8,12 +8,12 @@ message[3] = "There probably aren't many things it can't cut.";
 message[4] = "Nice.";
 message[5] = "What kind of dunce just left it here...?";
 
-/*choice[0] = "funny";
+choice[0] = "funny";
 choice[1] = "unfunny";
-choiceat[0] = 1;
-choiceoutcome[0] = 2;
-choiceoutcome[1] = 3;
-message_end2[0] = 2;*/
+choiceat[0] = 99;
+choiceoutcome[0] = 99;
+choiceoutcome[1] = 99;
+message_end2[0] = 99;
 
 
 c_txtcommon();

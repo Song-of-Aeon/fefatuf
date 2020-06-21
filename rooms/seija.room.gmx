@@ -91,17 +91,17 @@
     <instance objName="o_wall" x="1728" y="448" name="inst_953A47C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall" x="1728" y="384" name="inst_8050DD7D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall" x="1664" y="320" name="inst_A33AA8DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_turret" x="1088" y="384" name="inst_B7D0BF11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_turret" x="1152" y="384" name="inst_4CD1B5A6" locked="0" code="alarm[90] = 90;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_turret" x="1216" y="384" name="inst_331C29DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_turret" x="1280" y="384" name="inst_CFA3B138" locked="0" code="alarm[90] = 90;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall" x="1088" y="320" name="inst_85C80541" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall" x="1152" y="320" name="inst_5E1ECEBA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall" x="1216" y="320" name="inst_F594EDC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall" x="1280" y="320" name="inst_382FAD6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall" x="896" y="384" name="inst_D3252759" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_turret" x="960" y="384" name="inst_DADA8CFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_turret" x="1024" y="384" name="inst_67B60D27" locked="0" code="alarm[90] = 90;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_fairy" x="960" y="384" name="inst_FA16202A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_fairy" x="1024" y="384" name="inst_81690B7B" locked="0" code="alarm[0] = 90;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_fairy" x="1088" y="384" name="inst_2A8DFC66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_fairy" x="1152" y="384" name="inst_5C95852E" locked="0" code="alarm[0] = 90;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_fairy" x="1216" y="384" name="inst_23CED6B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_fairy" x="1280" y="384" name="inst_FDCA3231" locked="0" code="alarm[0] = 90;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="prt_thetiles" x="864" y="608" w="64" h="64" xo="0" yo="0" id="10000261" name="inst_3B3BF76B" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -6,12 +6,12 @@ message[1] = "Hey,
 ain't that my Mini-Hakkero?";
 message[2] = "Nice. Let's keep moving.";
 
-/*choice[0] = "funny";
+choice[0] = "funny";
 choice[1] = "unfunny";
-choiceat[0] = 1;
-choiceoutcome[0] = 2;
-choiceoutcome[1] = 3;
-message_end2[0] = 2;*/
+choiceat[0] = 99;
+choiceoutcome[0] = 99;
+choiceoutcome[1] = 99;
+message_end2[0] = 99;
 
 
 c_txtcommon();
