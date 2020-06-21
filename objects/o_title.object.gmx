@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>bitcher = 0;
 going = false;
-if window_get_x() &lt; 1920 || window_get_y() &lt; 1080 {
-    window_set_size((window_get_y()/9)*16, window_get_y());
+if display_get_width() &lt; 1920 || display_get_height() &lt; 1080 {
+    window_set_size((display_get_height()/9)*16, display_get_height());
 }
 savedx = x;
 savedy = y+8;
