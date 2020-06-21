@@ -36,6 +36,7 @@
     <sprite>sprites\s_seijatest</sprite>
     <sprite>sprites\s_kogasatest</sprite>
     <sprite>sprites\s_marisatest</sprite>
+    <sprite>sprites\s_thief</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\s_fuck_the_police</background>
@@ -84,6 +85,7 @@
     <object>objects\o_roukanken</object>
     <object>objects\o_mini_hakkero</object>
     <object>objects\o_goal</object>
+    <object>objects\o_door</object>
     <object>objects\o_turret</object>
     <object>objects\object2</object>
     <object>objects\o_ring</object>
@@ -92,12 +94,12 @@
     <object>objects\o_title</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\door</room>
     <room>rooms\title</room>
     <room>rooms\mini_hakkero</room>
     <room>rooms\kogasa</room>
     <room>rooms\roukanken</room>
     <room>rooms\seija</room>
+    <room>rooms\door</room>
     <room>rooms\first_corridor</room>
     <room>rooms\last_corridor</room>
   </rooms>

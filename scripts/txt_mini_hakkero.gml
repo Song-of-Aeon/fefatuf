@@ -8,6 +8,8 @@ message[1] = "Hey,
 ain't that my Mini-Hakkero?";
 msgsprite[2] = s_marisatest;
 message[2] = "Nice. Let's keep moving.";
+message[3] = "[Press S/Z/Space/Enter to charge a Master Spark,
+and a direction to unleash it!]";
 
 choice[0] = "funny";
 choice[1] = "unfunny";
