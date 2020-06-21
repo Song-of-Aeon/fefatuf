@@ -77,6 +77,9 @@ if fading {
 }
 if room != BOSS {
     if collision_point(x, y, o_object, false, false) &amp;&amp; !collision_point(x, y, o_fairy, false, false) {
+        /*if collision_point(x, y, o_rock, false, false).vspd &gt; 1 || collision_point(x, y, o_rock, false, false).vspd &lt; -1 {
+            instance_destroy();
+        }*/
         fading = true;
     }
 } else {

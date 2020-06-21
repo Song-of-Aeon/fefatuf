@@ -36,7 +36,11 @@ moving = true;
 loaded = false;
 hp = 19 //58
 console_log("ikiteru ze!");
-state = c_standard;
+if room = BOSS {
+    state = c_vsboss;
+} else {
+    state = c_standard;
+}
 dialogueat = 0;
 thebigblack = 0;
 savedy2 = 4;

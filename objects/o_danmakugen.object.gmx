@@ -28,7 +28,11 @@
             <string>savedx = x;
 hspd = 0;
 alarm[0] = 15;
-creator = false
+creator = false;
+loler = .1;
+lolcount = 30;
+count = 0;
+maker = false;
 </string>
           </argument>
         </arguments>
@@ -63,7 +67,7 @@ creator = false
     }
 }
 
-alarm[0] = 30;
+alarm[0] = lolcount;
 </string>
           </argument>
         </arguments>
@@ -91,6 +95,20 @@ if savedx &gt; x {
     hspd -= .1;
 } else {
     hspd += .1;
+}
+count++;
+if lolcount = 2 &amp;&amp; count = 200 {
+    with o_danmakugen {
+        lolcount = 60;
+    }
+    maker = true;
+} else if maker &amp;&amp; count &gt;= 350 {
+    with o_danmakugen {
+        if !maker {
+            lolcount = 60;
+        }
+        maker = false;
+    }
 }
 </string>
           </argument>

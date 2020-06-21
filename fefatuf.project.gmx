@@ -71,6 +71,8 @@
     <script>scripts\c_wiggle.gml</script>
     <script>scripts\hey_asswipe.gml</script>
     <script>scripts\c_aimedsometimes.gml</script>
+    <script>scripts\c_undertalefighter.gml</script>
+    <script>scripts\c_judgement.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\ft_calligraphic</font>

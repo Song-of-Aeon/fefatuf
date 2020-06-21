@@ -68,21 +68,36 @@ switch attack {
             savedx = x+275;
         }
         state = c_aimedsometimes;
-        attack = 99;
+        attack = 5;
         break;
     case 1:
         instance_destroy(o_danmakugen);
-        attack = 99;
+        state = c_undertalefighter;
+        attack = 6;
+        break;
+    case 2:
+        with instance_create(x-250, y, o_danmakugen) {
+            savedx = savedx-275;
+            loler = 5;
+            lolcount = 60;
+        }
+        with instance_create(x+250, y, o_danmakugen) {
+            creator = true;
+            savedx = x+275;
+            loler = 5;
+            lolcount = 2;
+        }
+        attack = 7;
         break;
 }
-if hp &lt; 1000 &amp;&amp; hp % 250 = 0 &amp;&amp; hp &gt; 0 {
-    hp--;
-    attack++;
+if hp &lt; 1000 -(attack-4)*333 &amp;&amp; hp &gt; 0 {
+    attack -= 4;
+    console_log("shinderu ze!");
 } else if hp &lt;= 0 {
     attack = 99;
+    state = c_null
     FANTASYTAKER.state = c_null;
     instance_create(960, 800, o_textbox);
-    dialogueat++;
 }
 c_wiggle();
 script_execute(state);
@@ -110,6 +125,7 @@ script_execute(state);
             <kind>1</kind>
             <string>draw_sprite_ext(s_hpbar, 0, x, y-48, hp/1000, 1, 0, c_white, 1);
 draw_sprite(sprite_index, image_index, savedx, savedy);
+draw_text(FANTASYTAKER.x, FANTASYTAKER.y, string(hp));
 </string>
           </argument>
         </arguments>
