@@ -97,11 +97,17 @@ if moving = true {
             hp--;
         }
     }
-    if select && !instance_exists(o_spark) && dialogueat > 0 {
+    if select && !instance_exists(o_spark) && !instance_exists(o_fai) && dialogueat > 0 {
         loaded = !loaded;
     }
 }
 if keyboard_check_pressed(ord("R")) || place_meeting(savedx, savedy, object2) {
     hp = -1;
 }
-
+//c_wiggle
+savedy2 += vavr;
+if savedy2 > 0 {
+    vavr -= .05;
+} else {
+    vavr += .05;
+}

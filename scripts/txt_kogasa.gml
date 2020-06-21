@@ -2,9 +2,9 @@
 //depending on if the message[] = is prefacing it, you have | <   this  > | much space
 //and five lines to work with
 msgsprite[0] = s_kogasatest;
-message[0] = "Boo!";
+message[0] = "Boo! Did I getcha?";
 msgsprite[1] = s_kogasatest;
-message[1] = "SAMPLE TEXT";
+message[1] = "...Um, I've done my scare, so I'm just going to go now...";
 msgsprite[2] = s_kogasatest;
 message[2] = "A human wants to learn how to spook?
 Well, you are a magician... Sure!";
