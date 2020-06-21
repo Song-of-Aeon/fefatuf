@@ -59,6 +59,7 @@
     <script>scripts\c_standard.gml</script>
     <script>scripts\c_null.gml</script>
     <script>scripts\c_wiggle.gml</script>
+    <script>scripts\hey_asswipe.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\ft_calligraphic</font>
@@ -87,9 +88,11 @@
     <object>objects\object2</object>
     <object>objects\o_ring</object>
     <object>objects\o_fai</object>
+    <object>objects\o_resetfai</object>
     <object>objects\o_title</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\door</room>
     <room>rooms\title</room>
     <room>rooms\mini_hakkero</room>
     <room>rooms\kogasa</room>

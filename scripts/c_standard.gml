@@ -1,3 +1,8 @@
+if place_meeting(x, y, o_goal) {
+    state = c_null;
+    instance_create(960, 800, o_textbox);
+    dialogueat++;
+}
 if loaded {
     if left {
         instance_create(x-32, y, o_spark);
@@ -96,9 +101,7 @@ if moving = true {
         loaded = !loaded;
     }
 }
-
-if place_meeting(x, y, o_goal) {
-    state = c_null;
-    instance_create(960, 800, o_textbox);
-    dialogueat++;
+if keyboard_check_pressed(ord("R")) || place_meeting(savedx, savedy, object2) {
+    hp = -1;
 }
+

@@ -72,7 +72,7 @@ if fading {
         instance_destroy();
     }
 }
-if collision_point(x, y, o_object, false, false) {
+if collision_point(x, y, o_object, false, false) &amp;&amp; !collision_point(x, y, o_fairy, false, false) {
     fading = true;
 }
 </string>
