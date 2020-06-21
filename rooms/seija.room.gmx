@@ -51,7 +51,6 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="o_kogasa" x="1664" y="384" name="inst_03A3DA91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall" x="960" y="768" name="inst_70B0F245" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall" x="1024" y="768" name="inst_103987F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall" x="1088" y="768" name="inst_1641C3D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -102,6 +101,7 @@
     <instance objName="o_fairy" x="1152" y="384" name="inst_AA185C6E" locked="0" code="alarm[0] = 135;&#xA;bitcher = 90;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_fairy" x="1216" y="384" name="inst_7FA846A7" locked="0" code="alarm[0] = 90;&#xA;bitcher = 90;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_fairy" x="1280" y="384" name="inst_4ECC2770" locked="0" code="alarm[0] = 90;&#xA;bitcher = 90;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_seija" x="1664" y="384" name="inst_86DE4E9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="prt_thetiles" x="864" y="608" w="64" h="64" xo="0" yo="0" id="10000261" name="inst_3B3BF76B" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

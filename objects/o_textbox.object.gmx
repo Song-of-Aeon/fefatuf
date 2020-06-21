@@ -57,7 +57,7 @@ if instance_exists(FANTASYTAKER) {
             txt_door();
             break;
         case 5:
-            txt_mini_hakkero();
+            txt_eiki();
             break;
         
     }
@@ -86,12 +86,17 @@ if instance_exists(FANTASYTAKER) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto_next();
-instance_create(0, 0, o_fai);
-if instance_exists(FANTASYTAKER) {
-    FANTASYTAKER.state = c_standard;
-    FANTASYTAKER.loaded = false;
-    FANTASYTAKER.select = false;
+            <string>if message[0] != "It's over!" {
+    room_goto_next();
+    instance_create(0, 0, o_fai);
+    if instance_exists(FANTASYTAKER) {
+        FANTASYTAKER.state = c_standard;
+        FANTASYTAKER.loaded = false;
+        FANTASYTAKER.select = false;
+    }
+} else {
+    room_goto(title);
+    instance_destroy(FANTASYTAKER);
 }
 </string>
           </argument>

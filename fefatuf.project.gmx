@@ -4,7 +4,15 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\m_btlintro</sound>
+    <sound>sound\m_btloop</sound>
+    <sound>sound\se_pew</sound>
+    <sound>sound\se_pi</sound>
+    <sound>sound\se_push</sound>
+    <sound>sound\se_puu</sound>
+    <sound>sound\se_pm</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\s_riddy</sprite>
     <sprite>sprites\s_riddymove</sprite>
@@ -43,6 +51,8 @@
     <sprite>sprites\s_hpbar</sprite>
     <sprite>sprites\s_kogasa2</sprite>
     <sprite>sprites\s_rejected</sprite>
+    <sprite>sprites\s_null</sprite>
+    <sprite>sprites\s_lock</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\s_fuck_the_police</background>
@@ -64,6 +74,7 @@
     <script>scripts\txt_roukanken.gml</script>
     <script>scripts\txt_seija.gml</script>
     <script>scripts\txt_door.gml</script>
+    <script>scripts\txt_eiki.gml</script>
     <script>scripts\txt_.gml</script>
     <script>scripts\c_standard.gml</script>
     <script>scripts\c_vsboss.gml</script>
@@ -93,6 +104,7 @@
     <object>objects\o_spark</object>
     <object>objects\o_object</object>
     <object>objects\o_kogasa</object>
+    <object>objects\o_seija</object>
     <object>objects\o_fairy</object>
     <object>objects\o_roukanken</object>
     <object>objects\o_mini_hakkero</object>
@@ -108,6 +120,7 @@
     <object>objects\o_boss</object>
     <object>objects\o_danmakugen</object>
     <object>objects\o_rejected</object>
+    <object>objects\o_lock</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\title</room>
