@@ -7,6 +7,7 @@ if count >= 60 {
         punk.speed = 10;
         punk.image_angle = punk.direction+90;
     }
+    audio_play_sound(se_pew, 0, false);
     count = 0;
     with instance_create(576, 320+irandom(512), object2) {
         hspd = 3;

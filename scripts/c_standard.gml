@@ -9,6 +9,7 @@ if loaded {
         left = false;
         loaded = false;
         hp -= 2;
+        audio_play_sound(se_puu, 0, false);
     }
     if right {
         with instance_create(x+32, y, o_spark) {
@@ -17,6 +18,7 @@ if loaded {
         right = false;
         loaded = false;
         hp -= 2;
+        audio_play_sound(se_puu, 0, false);
     }
     if up {
         with instance_create(x, y-32, o_spark) {
@@ -25,6 +27,7 @@ if loaded {
         up = false;
         loaded = false;
         hp -= 2;
+        audio_play_sound(se_puu, 0, false);
     }
     if down {
         with instance_create(x, y+32, o_spark) {
@@ -33,6 +36,7 @@ if loaded {
         down = false;
         loaded = false;
         hp -= 2;
+        audio_play_sound(se_puu, 0, false);
     }
 }
 if moving = true {
@@ -43,6 +47,7 @@ if moving = true {
                     with instance_position(savedx+hput*64, savedy, o_object) {
                         savedx -= 64;
                         hspd += 64;
+                        audio_play_sound(se_push, 0, false);
                     }
                 }
             } else {
@@ -57,6 +62,7 @@ if moving = true {
                     with instance_position(savedx+hput*64, savedy, o_object) {
                         savedx += 64;
                         hspd -= 64;
+                        audio_play_sound(se_push, 0, false);
                     }
                 }
             } else {
@@ -74,6 +80,7 @@ if moving = true {
                     with instance_position(savedx, savedy+vput*64, o_object) {
                         savedy -= 64;
                         vspd += 64;
+                        audio_play_sound(se_push, 0, false);
                     }
                 }
             } else {
@@ -88,6 +95,7 @@ if moving = true {
                     with instance_position(savedx, savedy+vput*64, o_object) {
                         savedy += 64;
                         vspd -= 64;
+                        audio_play_sound(se_push, 0, false);
                     }
                 }
             } else {
@@ -99,10 +107,12 @@ if moving = true {
     }
     if select && !instance_exists(o_spark) && !instance_exists(o_fai) && dialogueat > 0 {
         loaded = !loaded;
+        audio_play_sound(se_pm, 0, false);
     }
 }
 if keyboard_check_pressed(ord("R")) || place_meeting(savedx, savedy, object2) {
     hp = -1;
+    audio_play_sound(se_pi, 0, false);
 }
 //c_wiggle
 savedy2 += vavr;

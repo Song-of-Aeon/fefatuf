@@ -4,7 +4,15 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\m_btlintro</sound>
+    <sound>sound\m_btloop</sound>
+    <sound>sound\se_pew</sound>
+    <sound>sound\se_pi</sound>
+    <sound>sound\se_push</sound>
+    <sound>sound\se_puu</sound>
+    <sound>sound\se_pm</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\s_riddy</sprite>
     <sprite>sprites\s_riddymove</sprite>

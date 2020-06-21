@@ -46,6 +46,7 @@ thebigblack = 0;
 savedy2 = 4;
 vavr = 0;
 kogasaalt = irandom(4);
+audio_play_sound(m_btlintro, 0, false);
 </string>
           </argument>
         </arguments>
@@ -100,6 +101,9 @@ if instance_exists(o_textbox) {
 thebigblack = clamp(thebigblack, 0, 1);
 if state = c_standard &amp;&amp; instance_exists(o_boss) {
     state = c_vsboss;
+}
+if !audio_is_playing(m_btlintro) &amp;&amp; !audio_is_playing(m_btloop) {
+    audio_play_sound(m_btloop, 0, true);
 }
 </string>
           </argument>
