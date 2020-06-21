@@ -96,7 +96,7 @@ if savedx &gt; x {
 } else {
     hspd += .1;
 }
-count++;
+/*count++;
 if lolcount = 2 &amp;&amp; count = 200 {
     with o_danmakugen {
         lolcount = 60;
@@ -105,11 +105,11 @@ if lolcount = 2 &amp;&amp; count = 200 {
 } else if maker &amp;&amp; count &gt;= 350 {
     with o_danmakugen {
         if !maker {
-            lolcount = 60;
+            lolcount = 2;
         }
         maker = false;
     }
-}
+}*/
 </string>
           </argument>
         </arguments>

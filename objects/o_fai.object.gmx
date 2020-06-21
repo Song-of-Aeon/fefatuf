@@ -39,7 +39,7 @@
     case 3:
         FANTASYTAKER.savedx = 896;
         FANTASYTAKER.savedy = 704;
-        FANTASYTAKER.hp = 70;
+        FANTASYTAKER.hp = 40;
         break;
     case 4:
         FANTASYTAKER.savedx = 512;
