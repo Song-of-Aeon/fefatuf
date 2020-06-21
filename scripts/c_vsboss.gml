@@ -1,4 +1,4 @@
-if place_meeting(x, y, o_goal) && hp >= 0 && y < 600 {
+if place_meeting(x, y, o_goal) {
     state = c_null;
     instance_create(960, 800, o_textbox);
     dialogueat++;
@@ -8,7 +8,6 @@ if loaded {
         instance_create(x-32, y, o_spark);
         left = false;
         loaded = false;
-        hp -= 2;
     }
     if right {
         with instance_create(x+32, y, o_spark) {
@@ -16,7 +15,6 @@ if loaded {
         }
         right = false;
         loaded = false;
-        hp -= 2;
     }
     if up {
         with instance_create(x, y-32, o_spark) {
@@ -24,7 +22,6 @@ if loaded {
         }
         up = false;
         loaded = false;
-        hp -= 2;
     }
     if down {
         with instance_create(x, y+32, o_spark) {
@@ -32,7 +29,6 @@ if loaded {
         }
         down = false;
         loaded = false;
-        hp -= 2;
     }
 }
 if moving = true {
@@ -49,7 +45,6 @@ if moving = true {
                 savedx -= 64;
                 hspd += 64;
             }
-            hp--;
         }
         if right {
             if instance_position(savedx+hput*64, savedy, o_rock) && instance_position(savedx+hput*64, savedy, o_object).object_index != o_wall {
@@ -63,7 +58,6 @@ if moving = true {
                 savedx += 64;
                 hspd -= 64;
             }
-            hp--;
         }
     }
     
@@ -80,7 +74,6 @@ if moving = true {
                 savedy -= 64;
                 vspd += 64;
             }
-            hp--;
         }
         if down {
             if instance_position(savedx, savedy+vput*64, o_rock) && instance_position(savedx, savedy+vput*64, o_object).object_index != o_wall {
@@ -94,7 +87,6 @@ if moving = true {
                 savedy += 64;
                 vspd -= 64;
             }
-            hp--;
         }
     }
     if select && !instance_exists(o_spark) && !instance_exists(o_fai) && dialogueat > 0 {
@@ -102,7 +94,10 @@ if moving = true {
     }
 }
 if keyboard_check_pressed(ord("R")) || place_meeting(savedx, savedy, object2) {
-    hp = -1;
+    hp--;
+    with instance_place(savedx, savedy, object2) {
+        instance_destroy();
+    }
 }
 //c_wiggle
 savedy2 += vavr;

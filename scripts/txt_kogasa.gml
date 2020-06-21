@@ -15,6 +15,7 @@ choiceat[0] = 0;
 choiceoutcome[0] = 1;
 choiceoutcome[1] = 2;
 message_end2[0] = 1;
+message_end2[1] = 1;
 choice_end2[0] = "die";
 
 

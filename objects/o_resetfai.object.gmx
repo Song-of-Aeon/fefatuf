@@ -60,7 +60,7 @@ if image_alpha = 1 {
         case 2:
             FANTASYTAKER.savedx = 768;
             FANTASYTAKER.savedy = 832;
-            FANTASYTAKER.hp = 27;
+            FANTASYTAKER.hp = 21;
             break;
         case 3:
             FANTASYTAKER.savedx = 768;
@@ -77,6 +77,11 @@ if image_alpha = 1 {
             FANTASYTAKER.savedy = 832;
             FANTASYTAKER.hp = 58;
             break;
+        case 6:
+            FANTASYTAKER.savedx = 1024;
+            FANTASYTAKER.savedy = 832;
+            FANTASYTAKER.hp = 10;
+            FANTASYTAKER.state = c_vsboss;
     }
     FANTASYTAKER.savedy2 = 4;
     instance_destroy();

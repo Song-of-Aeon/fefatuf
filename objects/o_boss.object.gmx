@@ -27,6 +27,12 @@
             <kind>1</kind>
             <string>hp = 1000;
 attack = 0;
+state = c_null;
+savedx = x;
+savedy = y+4;
+hahr = 0;
+vavr = 0;
+count = 0;
 </string>
           </argument>
         </arguments>
@@ -54,14 +60,20 @@ attack = 0;
 }
 switch attack {
     case 0:
-        instance_create(960-300, y, o_danmakugen);
-        with instance_create(960+300, y, o_danmakugen) {
-            creator = true;
+        with instance_create(x-250, y, o_danmakugen) {
+            savedx = savedx-275;
         }
+        with instance_create(x+250, y, o_danmakugen) {
+            creator = true;
+            savedx = x+275;
+        }
+        state = c_aimedsometimes;
         attack = 99;
+        break;
     case 1:
         instance_destroy(o_danmakugen);
         attack = 99;
+        break;
 }
 if hp &lt; 1000 &amp;&amp; hp % 250 = 0 &amp;&amp; hp &gt; 0 {
     hp--;
@@ -72,6 +84,8 @@ if hp &lt; 1000 &amp;&amp; hp % 250 = 0 &amp;&amp; hp &gt; 0 {
     instance_create(960, 800, o_textbox);
     dialogueat++;
 }
+c_wiggle();
+script_execute(state);
 </string>
           </argument>
         </arguments>
@@ -95,6 +109,7 @@ if hp &lt; 1000 &amp;&amp; hp % 250 = 0 &amp;&amp; hp &gt; 0 {
           <argument>
             <kind>1</kind>
             <string>draw_sprite_ext(s_hpbar, 0, x, y-48, hp/1000, 1, 0, c_white, 1);
+draw_sprite(sprite_index, image_index, savedx, savedy);
 </string>
           </argument>
         </arguments>

@@ -41,6 +41,7 @@
     <sprite>sprites\s_dan</sprite>
     <sprite>sprites\s_maku</sprite>
     <sprite>sprites\s_hpbar</sprite>
+    <sprite>sprites\s_kogasa2</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\s_fuck_the_police</background>
@@ -64,9 +65,11 @@
     <script>scripts\txt_door.gml</script>
     <script>scripts\txt_.gml</script>
     <script>scripts\c_standard.gml</script>
+    <script>scripts\c_vsboss.gml</script>
     <script>scripts\c_null.gml</script>
     <script>scripts\c_wiggle.gml</script>
     <script>scripts\hey_asswipe.gml</script>
+    <script>scripts\c_aimedsometimes.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\ft_calligraphic</font>
@@ -103,13 +106,13 @@
     <object>objects\o_danmakugen</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\BOSS</room>
     <room>rooms\title</room>
     <room>rooms\mini_hakkero</room>
     <room>rooms\kogasa</room>
     <room>rooms\roukanken</room>
     <room>rooms\seija</room>
     <room>rooms\door</room>
+    <room>rooms\BOSS</room>
     <room>rooms\first_corridor</room>
     <room>rooms\last_corridor</room>
   </rooms>

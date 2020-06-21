@@ -13,7 +13,8 @@ choice[1] = chr(34) + "Fuck off." + chr(34);
 choiceat[0] = 0;
 choiceoutcome[0] = 1;
 choiceoutcome[1] = 2;
-message_end2[0] = "die";
+message_end2[1] = 1;
+message_end2[0] = 1;
 
 
 c_txtcommon();

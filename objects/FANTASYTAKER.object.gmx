@@ -41,6 +41,7 @@ dialogueat = 0;
 thebigblack = 0;
 savedy2 = 4;
 vavr = 0;
+kogasaalt = irandom(4);
 </string>
           </argument>
         </arguments>

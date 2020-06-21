@@ -54,12 +54,15 @@ fading = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = savedx;
-y = savedy;
-savedx += hspd;
-savedy += vspd;
-x += hahr;
-y += vavr;
+            <string>if speed = 0 {
+    x = savedx;
+    y = savedy;
+    savedx += hspd;
+    savedy += vspd;
+    x += hahr;
+    y += vavr;
+}
+
 if savedx % 64 = 0 {
     hahr = savedx - x;
 }
@@ -72,7 +75,16 @@ if fading {
         instance_destroy();
     }
 }
-if collision_point(x, y, o_object, false, false) &amp;&amp; !collision_point(x, y, o_fairy, false, false) {
+if room != BOSS {
+    if collision_point(x, y, o_object, false, false) &amp;&amp; !collision_point(x, y, o_fairy, false, false) {
+        fading = true;
+    }
+} else {
+    if collision_point(x, y, o_rock, false, false) {
+        fading = true;
+    }
+}
+if y &gt; room_height || x &lt; 0 || x &gt; room_width || y &lt; 0 {
     fading = true;
 }
 </string>
