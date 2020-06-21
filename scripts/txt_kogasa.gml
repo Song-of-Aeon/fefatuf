@@ -1,13 +1,16 @@
 ///txt_kogasa
 //depending on if the message[] = is prefacing it, you have | <   this  > | much space
 //and five lines to work with
+msgsprite[0] = s_kogasatest;
 message[0] = "Boo!";
-message[1] = "";
+msgsprite[1] = s_kogasatest;
+message[1] = "SAMPLE TEXT";
+msgsprite[2] = s_kogasatest;
 message[2] = "A human wants to learn how to spook?
 Well, you are a magician... Sure!";
 
-choice[0] = "Meh. Come back to my place for something real surprising.";
-choice[1] = "Woah! You're pretty good. Wanna team up?";
+choice[0] = chr(34) + "Meh. Come back to my place for something real surprising." + chr(34);
+choice[1] = chr(34) + "Woah! You're pretty good. Wanna team up?" + chr(34);
 choiceat[0] = 0;
 choiceoutcome[0] = 1;
 choiceoutcome[1] = 2;
