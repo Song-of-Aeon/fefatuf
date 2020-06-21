@@ -53,6 +53,8 @@
     <sprite>sprites\s_rejected</sprite>
     <sprite>sprites\s_null</sprite>
     <sprite>sprites\s_lock</sprite>
+    <sprite>sprites\s_seija</sprite>
+    <sprite>sprites\s_eiki</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\s_fuck_the_police</background>

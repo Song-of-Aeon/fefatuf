@@ -18,7 +18,7 @@ msgsprite[5] = s_eikitest;
 message[5] = "Indeed. Now if you'll excuse me-"
 msgsprite[6] = s_marisatest;
 message[6] = "Wait!"
-msgsprite[7] = s_eikitest;
+msgsprite[7] = s_marisatest;
 message[7] = "I might not have gotten your lesson just now,
 but that's because you were hurlin' bullets at me!"
 msgsprite[8] = s_marisatest;

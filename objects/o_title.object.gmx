@@ -28,7 +28,8 @@
             <string>bitcher = 0;
 going = false;
 if display_get_width() &lt; 1920 || display_get_height() &lt; 1080 {
-    window_set_size((display_get_height()/9)*16, display_get_height());
+    window_set_size((display_get_width()), display_get_height());
+    window_set_position(0, 0);
 }
 savedx = x;
 savedy = y+8;
