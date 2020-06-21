@@ -37,10 +37,15 @@
     <sprite>sprites\s_kogasatest</sprite>
     <sprite>sprites\s_marisatest</sprite>
     <sprite>sprites\s_thief</sprite>
+    <sprite>sprites\s_eikitest</sprite>
+    <sprite>sprites\s_dan</sprite>
+    <sprite>sprites\s_maku</sprite>
+    <sprite>sprites\s_hpbar</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\s_fuck_the_police</background>
     <background>background\prt_thetiles</background>
+    <background>background\prt_twotiles</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -56,6 +61,7 @@
     <script>scripts\txt_kogasa.gml</script>
     <script>scripts\txt_roukanken.gml</script>
     <script>scripts\txt_seija.gml</script>
+    <script>scripts\txt_door.gml</script>
     <script>scripts\txt_.gml</script>
     <script>scripts\c_standard.gml</script>
     <script>scripts\c_null.gml</script>
@@ -86,14 +92,18 @@
     <object>objects\o_mini_hakkero</object>
     <object>objects\o_goal</object>
     <object>objects\o_door</object>
+    <object>objects\o_block</object>
     <object>objects\o_turret</object>
     <object>objects\object2</object>
     <object>objects\o_ring</object>
     <object>objects\o_fai</object>
     <object>objects\o_resetfai</object>
     <object>objects\o_title</object>
+    <object>objects\o_boss</object>
+    <object>objects\o_danmakugen</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\BOSS</room>
     <room>rooms\title</room>
     <room>rooms\mini_hakkero</room>
     <room>rooms\kogasa</room>

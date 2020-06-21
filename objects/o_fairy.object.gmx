@@ -80,7 +80,7 @@ with instance_create(x, y, object2) {
           <argument>
             <kind>1</kind>
             <string>if place_meeting(x, y, o_spark) {
-    instance_destroy(FANTASYTAKER);
+    FANTASYTAKER.hp = 0;
 }
 c_wiggle();
 </string>
