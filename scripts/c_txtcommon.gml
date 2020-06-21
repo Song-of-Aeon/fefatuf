@@ -1,6 +1,6 @@
 ///c_txtcommon
 
-choice[0] = "";
+//choice[0] = "";
 
 
 message_current = 0;

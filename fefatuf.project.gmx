@@ -33,6 +33,9 @@
     <sprite>sprites\s_title</sprite>
     <sprite>sprites\s_tart</sprite>
     <sprite>sprites\s_fairy</sprite>
+    <sprite>sprites\s_seijatest</sprite>
+    <sprite>sprites\s_kogasatest</sprite>
+    <sprite>sprites\s_marisatest</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\s_fuck_the_police</background>
@@ -47,10 +50,11 @@
     <script>scripts\ds_grid_draw.gml</script>
     <script>scripts\ds_blue_draw.gml</script>
     <script>scripts\c_txtcommon.gml</script>
+    <script>scripts\txt_intro.gml</script>
     <script>scripts\txt_mini_hakkero.gml</script>
-    <script>scripts\txt_seija.gml</script>
-    <script>scripts\txt_roukanken.gml</script>
     <script>scripts\txt_kogasa.gml</script>
+    <script>scripts\txt_roukanken.gml</script>
+    <script>scripts\txt_seija.gml</script>
     <script>scripts\txt_.gml</script>
     <script>scripts\c_standard.gml</script>
     <script>scripts\c_null.gml</script>

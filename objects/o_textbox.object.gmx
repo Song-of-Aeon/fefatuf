@@ -39,26 +39,30 @@ fading = false;
 vavr = 0;
 savedy = y;
 naty = y;
-switch FANTASYTAKER.dialogueat {
-    case 0:
-        txt_mini_hakkero();
-        break;
-    case 1:
-        txt_kogasa();
-        break;
-    case 2:
-        txt_roukanken();
-        break;
-    case 3:
-        txt_seija();
-        break;
-    case 4:
-        txt_mini_hakkero();
-        break;
-    case 5:
-        txt_mini_hakkero();
-        break;
-    
+if instance_exists(FANTASYTAKER) {
+    switch FANTASYTAKER.dialogueat {
+        case 0:
+            txt_mini_hakkero();
+            break;
+        case 1:
+            txt_kogasa();
+            break;
+        case 2:
+            txt_roukanken();
+            break;
+        case 3:
+            txt_seija();
+            break;
+        case 4:
+            txt_mini_hakkero();
+            break;
+        case 5:
+            txt_mini_hakkero();
+            break;
+        
+    }
+} else {
+    txt_intro();
 }
 </string>
           </argument>
@@ -84,7 +88,11 @@ switch FANTASYTAKER.dialogueat {
             <kind>1</kind>
             <string>room_goto_next();
 instance_create(0, 0, o_fai);
-FANTASYTAKER.state = c_standard;
+if instance_exists(FANTASYTAKER) {
+    FANTASYTAKER.state = c_standard;
+    FANTASYTAKER.loaded = false;
+    FANTASYTAKER.select = false;
+}
 </string>
           </argument>
         </arguments>
@@ -110,8 +118,8 @@ FANTASYTAKER.state = c_standard;
             <string>c_input();
 message_draw = message[message_current];
 if choiceno &lt; array_length_1d(choiceat) &amp;&amp; message_current = choiceat[choiceno] {
-    choicesetdraw[0] = choice[choiceno*2];
-    choicesetdraw[1] = choice[choiceno*2+1];
+    choicesetdraw[0] = choice[0];
+    choicesetdraw[1] = choice[1];
     starting = 1;
 }
 if (select) { 
@@ -125,13 +133,14 @@ if (select) {
         message_length = string_length(message[message_current]);
         characters = 0;
         message_draw = "";
+        txtalpha = .1;
     } else { 
         instance_destroy();
         
         
     }
 }
-if keyboard_check_pressed(vk_up) || keyboard_check_pressed(vk_down) {
+if up || down {
     if chooser = 0 {
         chooser = 1;
         vavr = -50;
@@ -195,16 +204,16 @@ naty += vavr;
             <kind>1</kind>
             <string>draw_set_font(ft_gabriola);
 if msgsprite[message_current] != 0 {
-    draw_sprite(msgsprite[message_current], msgspriteno[message_current], x, y);
+    draw_sprite(msgsprite[message_current], 0, x, y);
 }
 draw_set_halign(fa_center);
 draw_set_colour(c_white);
 if choosing = 0 {
-    draw_text(x, y, message_draw);
+    draw_text_colour(x, y, message_draw, c_white, c_white, c_white, c_white, txtalpha);
 } else {
-    draw_text(x, y, choicesetdraw[0]);
-    draw_text(x, y+50, choicesetdraw[1]);
-    draw_sprite(s_selector, 0, x, naty-50);
+    draw_text(x, y, choice[0]);
+    draw_text(x, y+50, choice[1]);
+    draw_sprite(s_selector, 0, x, naty-50+103);
 }
 
 </string>

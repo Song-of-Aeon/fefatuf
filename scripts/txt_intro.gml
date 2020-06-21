@@ -1,18 +1,15 @@
-///txt_mini_hakkero
+///txt_
 //depending on if the message[] = is prefacing it, you have | <   this  > | much space
 //and five lines to work with
-msgsprite[0] = s_kogasatest;
-message[0] = "Woah, this sword!";
-msgsprite[0] = s_marisatest;
-message[1] = "Is it valuable?!";
-msgsprite[0] = s_kogasatest;
-message[2] = "Yeah, um... I work with them sometimes so I can tell.";
-msgsprite[0] = s_kogasatest;
-message[3] = "There probably aren't many things it can't cut.";
-msgsprite[0] = s_marisatest;
-message[4] = "Nice.";
-msgsprite[0] = s_kogasatest;
-message[5] = "What kind of dunce just left it here...?";
+message[0] = "Marisa woke up with a dream.
+Harem full of youkai girls.";
+message[1] = "It was, however, not an easy dream to achieve.
+It could cost her her life.";
+message[2] = chr(34) + "When cute girls are involved, no price is too high." + chr(34) +
+"
+She said as she ventured into the night.";
+message[3] = chr(34) + "And if I pick up some loot on the way...
+No harm done, right?" + chr(34);
 
 choice[0] = "funny";
 choice[1] = "unfunny";

@@ -88,15 +88,16 @@ with instance_create(x, y, object2) {
 if select {
     going = true;
 }
-if back {
-    game_end();
-}
+
 
 if going {
     bitcher += .05;
-    if bitcher &gt;= 1 {
-        room_goto_next();
-        instance_create(0, 0, o_fai);
+    if bitcher = 1 {
+        instance_create(960, 800, o_textbox);
+    }
+} else {
+    if back {
+        game_end();
     }
 }
 c_wiggle();

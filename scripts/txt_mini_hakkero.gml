@@ -1,9 +1,12 @@
 ///txt_mini_hakkero
 //depending on if the message[] = is prefacing it, you have | <   this  > | much space
 //and five lines to work with
+msgsprite[0] = s_marisatest;
 message[0] = "No girls yet...";
+msgsprite[1] = s_marisatest;
 message[1] = "Hey,
 ain't that my Mini-Hakkero?";
+msgsprite[2] = s_marisatest;
 message[2] = "Nice. Let's keep moving.";
 
 choice[0] = "funny";
