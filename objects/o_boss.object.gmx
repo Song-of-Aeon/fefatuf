@@ -56,7 +56,7 @@ count = 0;
           <argument>
             <kind>1</kind>
             <string>if place_meeting(x, y, o_spark) {
-    hp--;
+    hp -= 1.2;
 }
 switch attack {
     case 0:
@@ -77,16 +77,24 @@ switch attack {
         break;
     case 2:
         with instance_create(x-250, y, o_danmakugen) {
-            savedx = savedx-275;
+            savedx = x-200;
             loler = 5;
-            lolcount = 60;
+            lolcount = 2;
+        }
+        with instance_create(x+250, y, o_danmakugen) {
+            creator = true;
+            savedx = x+200;
+            loler = 5;
+            lolcount = 2;
+        }
+        with instance_create(x-250, y, o_danmakugen) {
+            savedx = x-275;
         }
         with instance_create(x+250, y, o_danmakugen) {
             creator = true;
             savedx = x+275;
-            loler = 5;
-            lolcount = 2;
         }
+        state = c_null;
         attack = 7;
         break;
 }
@@ -95,9 +103,11 @@ if hp &lt; 1000 -(attack-4)*333 &amp;&amp; hp &gt; 0 {
     console_log("shinderu ze!");
 } else if hp &lt;= 0 {
     attack = 99;
-    state = c_null
+    state = c_null;
     FANTASYTAKER.state = c_null;
     instance_create(960, 800, o_textbox);
+    instance_destroy(object2);
+    instance_destroy();
 }
 c_wiggle();
 script_execute(state);

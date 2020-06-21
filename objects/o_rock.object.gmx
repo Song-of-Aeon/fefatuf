@@ -56,6 +56,11 @@ movedthis = false;
 y = savedy;
 hspd = hspd/1.3;
 vspd = vspd/1.3;
+if place_meeting(x, y, object2) &amp;&amp; abs(vspd) &gt; 1 {
+    with instance_nearest(x, y, object2) {
+        instance_destroy();
+    }
+}
 x += hspd;
 y += vspd;
 if place_meeting(x, y, o_spark) &amp;&amp; movedthis = false {

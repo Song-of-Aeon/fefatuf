@@ -210,7 +210,7 @@ naty += vavr;
             <kind>1</kind>
             <string>draw_set_font(ft_gabriola);
 if msgsprite[message_current] != 0 {
-    draw_sprite(msgsprite[message_current], 0, x, y);
+    draw_sprite(msgsprite[message_current], 0, x, y-400);
 }
 draw_set_halign(fa_center);
 draw_set_colour(c_white);
