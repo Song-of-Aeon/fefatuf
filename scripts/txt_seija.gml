@@ -3,9 +3,9 @@
 //and five lines to work with
 msgsprite[0] = s_seijatest;
 message[0] = "hey asswipe. didja like my puzzle lol";
-msgsprite[0] = s_seijatest;
+msgsprite[1] = s_seijatest;
 message[1] = "LOLOL what a fuckin simp";
-msgsprite[0] = s_seijatest;
+msgsprite[2] = s_seijatest;
 message[2] = "kyahaha, i don't think i will";
 
 choice[0] = chr(34) + "Yeah, it was challenging!" + chr(34);

@@ -3,15 +3,15 @@
 //and five lines to work with
 msgsprite[0] = s_kogasatest;
 message[0] = "Woah, this sword!";
-msgsprite[0] = s_marisatest;
+msgsprite[1] = s_marisatest;
 message[1] = "Is it valuable?!";
-msgsprite[0] = s_kogasatest;
+msgsprite[2] = s_kogasatest;
 message[2] = "Yeah, um... I work with them sometimes so I can tell.";
-msgsprite[0] = s_kogasatest;
+msgsprite[3] = s_kogasatest;
 message[3] = "There probably aren't many things it can't cut.";
-msgsprite[0] = s_marisatest;
+msgsprite[4] = s_marisatest;
 message[4] = "Nice.";
-msgsprite[0] = s_kogasatest;
+msgsprite[5] = s_kogasatest;
 message[5] = "What kind of dunce just left it here...?";
 
 choice[0] = "funny";

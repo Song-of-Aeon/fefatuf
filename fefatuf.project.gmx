@@ -42,6 +42,7 @@
     <sprite>sprites\s_maku</sprite>
     <sprite>sprites\s_hpbar</sprite>
     <sprite>sprites\s_kogasa2</sprite>
+    <sprite>sprites\s_rejected</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\s_fuck_the_police</background>
@@ -104,6 +105,7 @@
     <object>objects\o_title</object>
     <object>objects\o_boss</object>
     <object>objects\o_danmakugen</object>
+    <object>objects\o_rejected</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\title</room>
@@ -115,6 +117,7 @@
     <room>rooms\BOSS</room>
     <room>rooms\first_corridor</room>
     <room>rooms\last_corridor</room>
+    <room>rooms\rejected</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

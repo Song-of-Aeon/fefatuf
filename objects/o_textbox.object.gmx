@@ -54,7 +54,7 @@ if instance_exists(FANTASYTAKER) {
             txt_seija();
             break;
         case 4:
-            txt_mini_hakkero();
+            txt_door();
             break;
         case 5:
             txt_mini_hakkero();
@@ -134,7 +134,13 @@ if (select) {
         characters = 0;
         message_draw = "";
         txtalpha = .1;
-    } else { 
+    } else {
+        if message_current = message_end2[choiceno] {
+            room_goto(rejected);
+            with instance_create(0, 0, o_rejected) {
+            savedroom = room;
+            }
+        }
         instance_destroy();
         
         
