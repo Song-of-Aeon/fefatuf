@@ -1,13 +1,17 @@
 ///txt_
 //depending on if the message[] = is prefacing it, you have | <   this  > | much space
 //and five lines to work with
+msgsprite[0] = s_null;
 message[0] = "Marisa woke up with a dream.
 Harem full of youkai girls.";
+msgsprite[1] = s_null;
 message[1] = "It was, however, not an easy dream to achieve.
 It could cost her her life.";
+msgsprite[2] = s_marisatest;
 message[2] = chr(34) + "When cute girls are involved, no price is too high." + chr(34) +
 "
 She said as she ventured into the night.";
+msgsprite[3] = s_marisatest;
 message[3] = chr(34) + "And if I pick up some loot on the way...
 No harm done, right?" + chr(34);
 

@@ -43,6 +43,7 @@
     <sprite>sprites\s_hpbar</sprite>
     <sprite>sprites\s_kogasa2</sprite>
     <sprite>sprites\s_rejected</sprite>
+    <sprite>sprites\s_null</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\s_fuck_the_police</background>
@@ -64,6 +65,7 @@
     <script>scripts\txt_roukanken.gml</script>
     <script>scripts\txt_seija.gml</script>
     <script>scripts\txt_door.gml</script>
+    <script>scripts\txt_eiki.gml</script>
     <script>scripts\txt_.gml</script>
     <script>scripts\c_standard.gml</script>
     <script>scripts\c_vsboss.gml</script>

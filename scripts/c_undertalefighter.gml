@@ -11,10 +11,12 @@ if count >= 60 {
     with instance_create(576, 320+irandom(512), object2) {
         hspd = 3;
         image_angle = 90;
+        sprite_index = s_dan;
     }
     with instance_create(1472, 320+irandom(512), object2) {
         hspd = -3;
         image_angle = -90;
+        sprite_index = s_maku;
     }
 }
 count++;
