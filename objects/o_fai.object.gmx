@@ -26,15 +26,20 @@
           <argument>
             <kind>1</kind>
             <string>switch room {
-    case 0:
-        FANTASYTAKER.savedx = 768;
-        FANTASYTAKER.savedy = 832;
-        FANTASYTAKER.hp = 20;
-        break;
     case 1:
         FANTASYTAKER.savedx = 768;
+        FANTASYTAKER.savedy = 832;
+        FANTASYTAKER.hp = 19;
+        break;
+    case 2:
+        FANTASYTAKER.savedx = 768;
         FANTASYTAKER.savedy = 640;
-        FANTASYTAKER.hp = 22;
+        FANTASYTAKER.hp = 26;
+        break;
+    case 3:
+        FANTASYTAKER.savedx = 896;
+        FANTASYTAKER.savedy = 704;
+        FANTASYTAKER.hp = 99;
         break;
 }
 image_alpha = 1.5;
@@ -86,7 +91,8 @@ if image_alpha &lt;= 0 {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_font(ft_calligraphic);
+            <string>draw_self();
+draw_set_font(ft_calligraphic);
 draw_set_colour(c_white);
 draw_text_colour(960, 440, "FANTASYTAKER", c_white, c_white, c_white, c_white, image_alpha);
 </string>
