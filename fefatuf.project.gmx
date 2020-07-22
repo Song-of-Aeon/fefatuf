@@ -5,13 +5,15 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\m_btlintro</sound>
-    <sound>sound\m_btloop</sound>
-    <sound>sound\se_pew</sound>
-    <sound>sound\se_pi</sound>
-    <sound>sound\se_push</sound>
-    <sound>sound\se_puu</sound>
-    <sound>sound\se_pm</sound>
+    <sounds name="fantasytaker">
+      <sound>sound\m_btlintro</sound>
+      <sound>sound\m_btloop</sound>
+      <sound>sound\se_pew</sound>
+      <sound>sound\se_pi</sound>
+      <sound>sound\se_push</sound>
+      <sound>sound\se_puu</sound>
+      <sound>sound\se_pm</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\s_riddy</sprite>
@@ -20,46 +22,50 @@
     <sprite>sprites\s_blue</sprite>
     <sprite>sprites\s_red</sprite>
     <sprite>sprites\s_sans</sprite>
-    <sprite>sprites\s_wall</sprite>
-    <sprite>sprites\s_rock</sprite>
-    <sprite>sprites\s_marisa</sprite>
-    <sprite>sprites\s_spark</sprite>
-    <sprite>sprites\s_girl</sprite>
-    <sprite>sprites\s_chooser</sprite>
-    <sprite>sprites\s_ui</sprite>
-    <sprite>sprites\s_walkable</sprite>
-    <sprite>sprites\s_side</sprite>
-    <sprite>sprites\s_roukanken</sprite>
-    <sprite>sprites\s_mini_hakkero</sprite>
-    <sprite>sprites\s_ring</sprite>
-    <sprite>sprites\s_ring2</sprite>
-    <sprite>sprites\s_kogasa</sprite>
-    <sprite>sprites\s_thebigblack</sprite>
-    <sprite>sprites\s_selector</sprite>
-    <sprite>sprites\s_danmaku</sprite>
-    <sprite>sprites\s_grave</sprite>
-    <sprite>sprites\s_title</sprite>
-    <sprite>sprites\s_tart</sprite>
-    <sprite>sprites\s_fairy</sprite>
-    <sprite>sprites\s_seijatest</sprite>
-    <sprite>sprites\s_kogasatest</sprite>
-    <sprite>sprites\s_marisatest</sprite>
-    <sprite>sprites\s_thief</sprite>
-    <sprite>sprites\s_eikitest</sprite>
-    <sprite>sprites\s_dan</sprite>
-    <sprite>sprites\s_maku</sprite>
-    <sprite>sprites\s_hpbar</sprite>
-    <sprite>sprites\s_kogasa2</sprite>
-    <sprite>sprites\s_rejected</sprite>
     <sprite>sprites\s_null</sprite>
-    <sprite>sprites\s_lock</sprite>
-    <sprite>sprites\s_seija</sprite>
-    <sprite>sprites\s_eiki</sprite>
+    <sprites name="fantasytaker">
+      <sprite>sprites\s_wall</sprite>
+      <sprite>sprites\s_rock</sprite>
+      <sprite>sprites\s_marisa</sprite>
+      <sprite>sprites\s_spark</sprite>
+      <sprite>sprites\s_girl</sprite>
+      <sprite>sprites\s_chooser</sprite>
+      <sprite>sprites\s_ui</sprite>
+      <sprite>sprites\s_walkable</sprite>
+      <sprite>sprites\s_roukanken</sprite>
+      <sprite>sprites\s_side</sprite>
+      <sprite>sprites\s_mini_hakkero</sprite>
+      <sprite>sprites\s_ring</sprite>
+      <sprite>sprites\s_ring2</sprite>
+      <sprite>sprites\s_kogasa</sprite>
+      <sprite>sprites\s_thebigblack</sprite>
+      <sprite>sprites\s_selector</sprite>
+      <sprite>sprites\s_danmaku</sprite>
+      <sprite>sprites\s_grave</sprite>
+      <sprite>sprites\s_title</sprite>
+      <sprite>sprites\s_tart</sprite>
+      <sprite>sprites\s_fairy</sprite>
+      <sprite>sprites\s_seijatest</sprite>
+      <sprite>sprites\s_kogasatest</sprite>
+      <sprite>sprites\s_marisatest</sprite>
+      <sprite>sprites\s_thief</sprite>
+      <sprite>sprites\s_eikitest</sprite>
+      <sprite>sprites\s_dan</sprite>
+      <sprite>sprites\s_maku</sprite>
+      <sprite>sprites\s_hpbar</sprite>
+      <sprite>sprites\s_kogasa2</sprite>
+      <sprite>sprites\s_rejected</sprite>
+      <sprite>sprites\s_lock</sprite>
+      <sprite>sprites\s_seija</sprite>
+      <sprite>sprites\s_eiki</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\s_fuck_the_police</background>
-    <background>background\prt_thetiles</background>
-    <background>background\prt_twotiles</background>
+    <backgrounds name="fantasytaker">
+      <background>background\prt_thetiles</background>
+      <background>background\prt_twotiles</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -69,72 +75,80 @@
     <script>scripts\c_bluesquares.gml</script>
     <script>scripts\ds_grid_draw.gml</script>
     <script>scripts\ds_blue_draw.gml</script>
-    <script>scripts\c_txtcommon.gml</script>
-    <script>scripts\txt_intro.gml</script>
-    <script>scripts\txt_mini_hakkero.gml</script>
-    <script>scripts\txt_kogasa.gml</script>
-    <script>scripts\txt_roukanken.gml</script>
-    <script>scripts\txt_seija.gml</script>
-    <script>scripts\txt_door.gml</script>
-    <script>scripts\txt_eiki.gml</script>
-    <script>scripts\txt_.gml</script>
-    <script>scripts\c_standard.gml</script>
-    <script>scripts\c_vsboss.gml</script>
-    <script>scripts\c_null.gml</script>
-    <script>scripts\c_wiggle.gml</script>
-    <script>scripts\hey_asswipe.gml</script>
-    <script>scripts\c_aimedsometimes.gml</script>
-    <script>scripts\c_undertalefighter.gml</script>
-    <script>scripts\c_judgement.gml</script>
+    <scripts name="fantasytaker">
+      <script>scripts\c_txtcommon.gml</script>
+      <script>scripts\txt_intro.gml</script>
+      <script>scripts\txt_mini_hakkero.gml</script>
+      <script>scripts\txt_kogasa.gml</script>
+      <script>scripts\txt_roukanken.gml</script>
+      <script>scripts\txt_seija.gml</script>
+      <script>scripts\txt_door.gml</script>
+      <script>scripts\txt_eiki.gml</script>
+      <script>scripts\txt_.gml</script>
+      <script>scripts\c_standard.gml</script>
+      <script>scripts\c_vsboss.gml</script>
+      <script>scripts\c_null.gml</script>
+      <script>scripts\c_wiggle.gml</script>
+      <script>scripts\hey_asswipe.gml</script>
+      <script>scripts\c_aimedsometimes.gml</script>
+      <script>scripts\c_undertalefighter.gml</script>
+      <script>scripts\c_judgement.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
-    <font>fonts\ft_calligraphic</font>
-    <font>fonts\ft_gabriola</font>
+    <fonts name="fantasytaker">
+      <font>fonts\ft_calligraphic</font>
+      <font>fonts\ft_gabriola</font>
+    </fonts>
   </fonts>
   <objects name="objects">
-    <object>objects\FANTASYTAKER</object>
     <object>objects\MEMENTO_VIXI</object>
     <object>objects\o_riddy</object>
     <object>objects\o_sans</object>
     <object>objects\o_unit</object>
     <object>objects\o_enemyunit</object>
     <object>objects\o_solid</object>
-    <object>objects\o_wall</object>
-    <object>objects\o_rock</object>
-    <object>objects\o_unknown</object>
-    <object>objects\o_textbox</object>
-    <object>objects\o_spark</object>
-    <object>objects\o_object</object>
-    <object>objects\o_kogasa</object>
-    <object>objects\o_seija</object>
-    <object>objects\o_fairy</object>
-    <object>objects\o_roukanken</object>
-    <object>objects\o_mini_hakkero</object>
-    <object>objects\o_goal</object>
-    <object>objects\o_door</object>
-    <object>objects\o_block</object>
-    <object>objects\o_turret</object>
-    <object>objects\object2</object>
-    <object>objects\o_ring</object>
-    <object>objects\o_fai</object>
-    <object>objects\o_resetfai</object>
-    <object>objects\o_title</object>
-    <object>objects\o_boss</object>
-    <object>objects\o_danmakugen</object>
-    <object>objects\o_rejected</object>
-    <object>objects\o_lock</object>
+    <objects name="fantasytaker">
+      <object>objects\o_wall</object>
+      <object>objects\FANTASYTAKER</object>
+      <object>objects\o_rock</object>
+      <object>objects\o_unknown</object>
+      <object>objects\o_spark</object>
+      <object>objects\o_textbox</object>
+      <object>objects\o_object</object>
+      <object>objects\o_kogasa</object>
+      <object>objects\o_seija</object>
+      <object>objects\o_fairy</object>
+      <object>objects\o_mini_hakkero</object>
+      <object>objects\o_roukanken</object>
+      <object>objects\o_goal</object>
+      <object>objects\o_door</object>
+      <object>objects\o_block</object>
+      <object>objects\o_turret</object>
+      <object>objects\object2</object>
+      <object>objects\o_ring</object>
+      <object>objects\o_fai</object>
+      <object>objects\o_resetfai</object>
+      <object>objects\o_title</object>
+      <object>objects\o_boss</object>
+      <object>objects\o_danmakugen</object>
+      <object>objects\o_rejected</object>
+      <object>objects\o_lock</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\title</room>
-    <room>rooms\mini_hakkero</room>
-    <room>rooms\kogasa</room>
-    <room>rooms\roukanken</room>
-    <room>rooms\seija</room>
-    <room>rooms\door</room>
-    <room>rooms\BOSS</room>
+    <rooms name="fantasytaker">
+      <room>rooms\title</room>
+      <room>rooms\mini_hakkero</room>
+      <room>rooms\kogasa</room>
+      <room>rooms\roukanken</room>
+      <room>rooms\seija</room>
+      <room>rooms\door</room>
+      <room>rooms\BOSS</room>
+      <room>rooms\rejected</room>
+    </rooms>
     <room>rooms\first_corridor</room>
     <room>rooms\last_corridor</room>
-    <room>rooms\rejected</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
